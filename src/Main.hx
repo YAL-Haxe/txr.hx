@@ -13,7 +13,7 @@ import js.Lib;
 			var pg = new TxrProgram();
 			pg.compile(code);
 			var v = pg.exec({
-				
+				pi: Math.PI,
 			});
 			return Std.string(v);
 		} catch (x:Dynamic) {
